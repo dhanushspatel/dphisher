@@ -1,13 +1,13 @@
 #!/bin/bash
 
 ##   dphisher 	: 	Automated Phishing Tool
-##   Author 	: 	TAHMID RAYAT 
-##   Version 	: 	2.3.5
+##   Author 	: 	Maddox Ai
+##   Version 	: 	0.1
 ##   Github 	: 	https://github.com/dhanushspatel/dphisher
 
 
 ##                   GNU GENERAL PUBLIC LICENSE
-##                    Version 3, 29 June 2007
+##                    Version 1, 6 July 2025
 ##
 ##    Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
 ##    Everyone is permitted to copy and distribute verbatim copies
