@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Version-2.3.5-green?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Version-0.1-green?style=for-the-badge">
   <img src="https://img.shields.io/github/license/dhanushspatel/dphisher?style=for-the-badge">
   <img src="https://img.shields.io/github/stars/dhanushspatel/dphisher?style=for-the-badge">
   <img src="https://img.shields.io/github/issues/dhanushspatel/dphisher?color=red&style=for-the-badge">
@@ -53,7 +53,7 @@ It only demonstrates "how phishing works". <b>You shall not misuse the informati
 
 - Just, Clone this repository -
   ```
-  git clone --depth=1 https://github.com/dhanushspatel/dphisher.git
+  git clone https://github.com/dhanushspatel/dphisher.git
   ```
 
 - Now go to cloned directory and run `dphisher.sh` -
