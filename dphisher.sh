@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ##   Zphisher 	: 	Automated Phishing Tool
-##   Author 	: 	DHANUSH S PATEL 
+##   Author 	: 	DHANUSH S PATEL
 ##   Version 	: 	2.3.5
 ##   Github 	: 	https://github.com/dhanushspatel/dphisher
 
@@ -204,14 +204,13 @@ check_status() {
 banner() {
 	cat <<- EOF
 		${ORANGE}
-		${ORANGE} ______      _     _     _               
-		${ORANGE}|___  /     | |   (_)   | |              
-		${ORANGE}   / / _ __ | |__  _ ___| |__   ___ _ __ 
-		${ORANGE}  / / | '_ \| '_ \| / __| '_ \ / _ \ '__|
-		${ORANGE} / /__| |_) | | | | \__ \ | | |  __/ |   
-		${ORANGE}/_____| .__/|_| |_|_|___/_| |_|\___|_|   
-		${ORANGE}      | |                                
-		${ORANGE}      |_|                ${RED}Version : ${__version__}
+		${ORANGE} ██████╗       ██████╗ ██╗  ██╗██╗███████╗██╗  ██╗███████╗██████╗ 
+		${ORANGE} ██╔══██╗      ██╔══██╗██║  ██║██║██╔════╝██║  ██║██╔════╝██╔══██╗
+		${ORANGE} ██║  ██║█████╗██████╔╝███████║██║███████╗███████║█████╗  ██████╔╝
+		${ORANGE} ██║  ██║╚════╝██╔═══╝ ██╔══██║██║╚════██║██╔══██║██╔══╝  ██╔══██╗
+		${ORANGE} ██████╔╝      ██║     ██║  ██║██║███████║██║  ██║███████╗██║  ██║
+		${ORANGE} ╚═════╝       ╚═╝     ╚═╝  ╚═╝╚═╝╚══════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝
+										              ${RED}Version : ${__version__}
 
 		${GREEN}[${WHITE}-${GREEN}]${CYAN} Tool Created by Dhanush S Patel (Maddox.Ai)${WHITE}
 	EOF
@@ -221,9 +220,11 @@ banner() {
 banner_small() {
 	cat <<- EOF
 		${BLUE}
-		${BLUE}  ░▀▀█░█▀█░█░█░▀█▀░█▀▀░█░█░█▀▀░█▀▄
-		${BLUE}  ░▄▀░░█▀▀░█▀█░░█░░▀▀█░█▀█░█▀▀░█▀▄
-		${BLUE}  ░▀▀▀░▀░░░▀░▀░▀▀▀░▀▀▀░▀░▀░▀▀▀░▀░▀${WHITE} ${__version__}
+		${BLUE}   ___      ___ _    _    _            
+		${BLUE}  |   \\ ___| _ \\ |_ (_)__| |_  ___ _ _ 
+		${BLUE}  | |) |___|  _/ ' \\| (_-< ' \\/ -_) '_|
+		${BLUE}  |___/    |_| |_||_|_/__/_||_\\___|_|  
+		${WHITE} 						${__version__}
 	EOF
 }
 
