@@ -2,7 +2,7 @@
 
 # Make Deb Package for dphisher (^.^)
 _PACKAGE=dphisher
-_VERSION=2.3.5
+_VERSION=0.1
 _ARCH="all"
 PKG_NAME="${_PACKAGE}_${_VERSION}_${_ARCH}.deb"
 
@@ -33,7 +33,7 @@ Architecture: ${_ARCH}
 Maintainer: @dhanushspatel
 Depends: ${_depend}
 Homepage: https://github.com/dhanushspatel/dphisher
-Description: An automated phishing tool with 30+ templates. This Tool is made for educational purpose only !
+Description: An automated phishing tool with 2 templates. More templates will be uploaded soon, This Tool is made for educational purpose only !
 CONTROL_EOF
 
 cat <<- PRERM_EOF > ./build_env/DEBIAN/prerm
