@@ -1,9 +1,9 @@
 #!/bin/bash
 
 ##   Zphisher 	: 	Automated Phishing Tool
-##   Author 	: 	DHANUSH S PATEL
+##   Author 	: 	TAHMID RAYAT 
 ##   Version 	: 	2.3.5
-##   Github 	: 	https://github.com/dhanushspatel/dphisher
+##   Github 	: 	https://github.com/htr-tech/zphisher
 
 
 ##                   GNU GENERAL PUBLIC LICENSE
@@ -203,13 +203,13 @@ check_status() {
 ## Banner
 banner() {
 	cat <<- EOF
-		${ORANGE}
-		${ORANGE} ██████╗       ██████╗ ██╗  ██╗██╗███████╗██╗  ██╗███████╗██████╗ 
-		${ORANGE} ██╔══██╗      ██╔══██╗██║  ██║██║██╔════╝██║  ██║██╔════╝██╔══██╗
-		${ORANGE} ██║  ██║█████╗██████╔╝███████║██║███████╗███████║█████╗  ██████╔╝
-		${ORANGE} ██║  ██║╚════╝██╔═══╝ ██╔══██║██║╚════██║██╔══██║██╔══╝  ██╔══██╗
-		${ORANGE} ██████╔╝      ██║     ██║  ██║██║███████║██║  ██║███████╗██║  ██║
-		${ORANGE} ╚═════╝       ╚═╝     ╚═╝  ╚═╝╚═╝╚══════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝
+		${RED}
+		${YELLOW}	 ██████╗       ██████╗ ██╗  ██╗██╗███████╗██╗  ██╗███████╗██████╗ 
+		${ORANGE}	 ██╔══██╗      ██╔══██╗██║  ██║██║██╔════╝██║  ██║██╔════╝██╔══██╗
+		${GREEN}	 ██║  ██║█████╗██████╔╝███████║██║███████╗███████║█████╗  ██████╔╝
+		${PURPLE}	 ██║  ██║╚════╝██╔═══╝ ██╔══██║██║╚════██║██╔══██║██╔══╝  ██╔══██╗
+		${VOILET}	 ██████╔╝      ██║     ██║  ██║██║███████║██║  ██║███████╗██║  ██║
+		${CYAN}		 ╚═════╝       ╚═╝     ╚═╝  ╚═╝╚═╝╚══════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝
 										              ${RED}Version : ${__version__}
 
 		${GREEN}[${WHITE}-${GREEN}]${CYAN} Tool Created by Dhanush S Patel (Maddox.Ai)${WHITE}
