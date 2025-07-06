@@ -355,7 +355,7 @@ about() {
 	cat <<- EOF
 		${GREEN} Author   ${RED}:  ${ORANGE}TAHMID RAYAT ${RED}[ ${ORANGE}dhanushspatel ${RED}]
 		${GREEN} Github   ${RED}:  ${CYAN}https://github.com/dhanushspatel
-		${GREEN} Social   ${RED}:  ${CYAN}https://tahmidrayat.is-a.dev
+		${GREEN} Social   ${RED}:  ${CYAN}https://
 		${GREEN} Version  ${RED}:  ${ORANGE}${__version__}
 
 		${WHITE} ${REDBG}Warning:${RESETBG}
