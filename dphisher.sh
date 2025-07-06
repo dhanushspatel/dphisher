@@ -90,7 +90,7 @@
 ##   TheLinuxChoice - https://twitter.com/linux_choice
 
 
-__version__="2.3.5"
+__version__="1.1"
 
 ## DEFAULT HOST & PORT
 HOST='127.0.0.1'
