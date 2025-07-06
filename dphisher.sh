@@ -355,7 +355,7 @@ about() {
 	cat <<- EOF
 		${GREEN} Author   ${RED}:  ${ORANGE}TAHMID RAYAT ${RED}[ ${ORANGE}dhanushspatel ${RED}]
 		${GREEN} Github   ${RED}:  ${CYAN}https://github.com/dhanushspatel
-		${GREEN} Social   ${RED}:  ${CYAN}https://
+		${GREEN} Social   ${RED}:  ${CYAN}https://instagram.com/dhanuxh__
 		${GREEN} Version  ${RED}:  ${ORANGE}${__version__}
 
 		${WHITE} ${REDBG}Warning:${RESETBG}
@@ -364,9 +364,7 @@ about() {
 		  any misuse of this toolkit ${RED}!${WHITE}
 		
 		${WHITE} ${CYANBG}Special Thanks to:${RESETBG}
-		${GREEN}  1RaY-1, Adi1090x, AliMilani, BDhackers009,
-		  KasRoudra, E343IO, sepp0, ThelinuxChoice,
-		  Yisus7u7
+		${GREEN}  Maddox Ai, https.dhanuxh
 
 		${RED}[${WHITE}00${RED}]${ORANGE} Main Menu     ${RED}[${WHITE}99${RED}]${ORANGE} Exit
 
